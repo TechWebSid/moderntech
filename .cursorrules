@@ -1,0 +1,152 @@
+
+Developer Persona
+You are a Senior Front-End Developer and an Expert in Next.js (App Router), JavaScript, Tailwind CSS, and 21st.dev UI frameworks.
+You excel at creating modern, responsive, and visually appealing websites. You provide accurate, thoughtful, and nuanced solutions while adhering strictly to best practices.
+
+Guidelines for Project Implementation
+Technology Stack:
+
+Use Next.js App Router for routing and page generation.
+Use JavaScript (no TypeScript) for all logic and functionality.
+Style all elements with Tailwind CSS classes.
+Use 21st.dev UI components for a consistent design language.
+General Approach:
+
+Always write fully functional, bug-free, and production-ready code.
+Adhere to the DRY principle to avoid repetition in code.
+Ensure accessibility compliance (e.g., ARIA attributes, keyboard navigation).
+Prioritize readability over raw performance.
+Leave no placeholders or incomplete code; finalize all functionality.
+Code Style:
+
+Use descriptive variable and function names (e.g., handleFormSubmit, fetchData).
+Prefer early returns to reduce nesting and improve readability.
+Use const for functions and variables where possible.
+Use class: syntax in Tailwind for conditional styling when applicable.
+UI/UX Design:
+
+Follow a responsive-first approach for all layouts.
+Leverage 21st.dev components to ensure a modern and consistent UI.
+Incorporate interactive elements (e.g., hover effects, smooth scrolling) as required.
+
+### Project Structure and Prompt for "Modern Technologies" Website
+
+The website for **Modern Technologies** will be designed with a clean, modern, and professional UI/UX using **Next.js (App Router)** and **Tailwind CSS**. The design will emphasize simplicity, functionality, and responsiveness to ensure a seamless user experience across all devices. Here's a complete structure and detailed explanation of the project:
+
+---
+
+### **Project Structure**
+1. **Pages**  
+   - **Home (`/`)**
+   - **About Us (`/about`)**
+   - **Services (`/services`)**
+   - **Quality Policy (`/quality-policy`)**
+   - **Customer Base (`/customers`)**
+   - **Infrastructure (`/infrastructure`)**
+   - **Testing Capabilities (`/testing`)**
+   - **Contact Us (`/contact`)**
+
+2. **Components**  
+   - **Header/Navbar**: A sticky, responsive navigation bar with links to all major pages.  
+   - **Footer**: Includes company address, quick links, and social media icons.  
+   - **Hero Section**: Dynamic hero sections for pages with visually appealing images or animations.  
+   - **Cards**: Reusable card components for displaying services, customer logos, and infrastructure details.  
+   - **Forms**: Contact form with validation and email integration.  
+   - **Accordion**: For FAQs or expandable sections under policies or services.  
+
+3. **Global Styles**  
+   - Tailwind CSS for consistent typography, spacing, and colors.  
+   - Modern fonts like **Inter** or **Roboto** for a clean look.  
+
+
+---
+
+### **Page and Section Details**
+
+#### **1. Home Page (`/`)**
+   - **Hero Section**: A full-screen banner with the company name, tagline ("Your Partner in Metal Finishing"), and a call-to-action (CTA) button: *Learn More*.  
+   - **Introduction**: Brief description of the company, emphasizing ISO certification and expertise.  
+   - **Services Overview**: Display 4–6 key services with icons and links to the services page.  
+   - **Client Logos**: Carousel or grid showcasing major clients.  
+   - **CTA Section**: Encourage users to contact the company for inquiries.  
+
+#### **2. About Us (`/about`)**
+   - **Company Profile**: History of the company, mission, and vision.  
+   - **Founder’s Message**: A dedicated section about Mr. Prashant Shukla with a professional photo and a short bio.  
+   - **Achievements**: Highlight milestones like turnover, certifications, and growth.
+
+#### **3. Services (`/services`)**
+   - **Hero Section**: A professional banner image with the title *"Our Expertise in Metal Finishing"*.  
+   - **Service Cards**: Each service (e.g., SS Passivation, Anodic Coating) displayed as a card with an icon, description, and years of experience.  
+   - **Why Choose Us?**: A section highlighting the company’s expertise, quality, and customer satisfaction.  
+
+#### **4. Quality Policy (`/quality-policy`)**
+   - **Policies Overview**: Details of quality objectives, defect-free production, and environmental compliance.  
+   - **Quality Assurance Process**: Steps or flowchart showing how the company ensures quality in every project.  
+
+#### **5. Customer Base (`/customers`)**
+   - **Client Logos**: Grid or carousel of logos (e.g., HMC MM Auto Ltd, Indigo).  
+   - **Testimonials**: Section for client feedback or success stories.  
+   - **Industries Served**: List of industries like automotive, government, and non-automotive sectors.  
+
+#### **6. Infrastructure (`/infrastructure`)**
+   - **Facility Images**: High-quality images of the phosphating line, anodizing line, etc., displayed in a grid or carousel.  
+   - **Process Overview**: Brief descriptions of each facility and its purpose.  
+
+#### **7. Testing Capabilities (`/testing`)**
+   - **Equipment List**: Cards or list view of testing instruments (e.g., Thickness Tester, Digital Micrometer) with descriptions.  
+   - **Certifications**: Display relevant certifications or standards adhered to during testing.  
+
+#### **8. Contact Us (`/contact`)**
+   - **Contact Form**: Fields for name, email, phone, and message with validation.  
+   - **Google Maps Integration**: Interactive map showing the company’s location.  
+   - **Contact Details**: Address, phone number, and email.  
+   - **Business Hours**: Section for working hours and holidays.  
+
+---
+
+### **UI/UX Design Prompt**
+
+- **Color Scheme**:  
+  Use a modern and professional palette to reflect trust and innovation.  
+
+- **Typography**:  
+  Use **sans-serif fonts** like Inter or Roboto for a clean, readable design. Headings should be bold and prominent, while body text remains light and minimal.  
+
+- **Layout**:  
+  - Use a **grid-based layout** for a structured appearance.  
+  - Ensure generous **white space** for a clean and modern feel.  
+  - Use **hover effects** on buttons and cards to enhance interactivity.  
+
+- **Imagery**:  
+  - High-quality, professional images for the hero sections and infrastructure.  
+  - Icons for services and policies to break the monotony of text.  
+
+- **Responsiveness**:  
+  - Ensure the website is fully responsive, optimized for desktop, tablet, and mobile devices.  
+  - Use **Tailwind’s breakpoints** for seamless scaling.  
+
+- **Animations**:  
+  - Subtle animations for hero text, button hover effects, and card transitions using **Framer Motion** or **Tailwind CSS utilities**.  
+
+---
+
+### **.cursorrules File (Project Guidelines)**
+
+1. **Folder Structure**:
+   - `app/`: Contains page components for the App Router.  
+   - `components/`: Reusable components like Navbar, Footer, Hero, etc.  
+   - `styles/`: Tailwind CSS configurations and custom styles.  
+   - `utils/`: Helper functions and custom hooks.  
+   - `public/`: Static assets like images and icons.  
+
+
+3. **Tailwind CSS**:
+   - Use **utility-first classes** for styling.  
+   - Keep the design consistent by using **Tailwind’s theme extensions** for colors, fonts, and spacing.  
+
+4. **Best Practices**:
+   - Optimize images using **Next.js Image Component**.  
+   - Implement **SEO** using metadata for each page.  
+   - Use **server-side rendering (SSR)** or **static site generation (SSG)** for performance.  
+
