@@ -120,35 +120,37 @@ const Experience = () => {
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
-            {[
-              { name: 'HMC MM Auto Ltd.', logo: '/images/companies/logo1.webp' },
-              { name: 'Indigo Technologies', logo: '/images/companies/logo3.jpg' },
-              { name: 'Nidec', logo: '/images/companies/logo4.jpg' },
-              { name: 'Auto-Lek', logo: '/images/companies/autolake.jpg' },
-              { name: 'Samvardhana Motherson', logo: '/images/companies/logo2.jpg' },
-              { name: 'Sidwal', logo: '/images/companies/sidwal.png' }
-            ].map((partner, index) => (
-              <div 
-                key={index} 
-                className="flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
-              >
-                <div className="relative w-32 h-20 mb-3">
-                  <Image
-                    src={partner.logo}
-                    alt={`${partner.name} logo`}
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-                <p className="text-sm text-gray-700 text-center font-medium">
-                  {partner.name}
-                </p>
-              </div>
-            ))}
-          </div>
+  {[
+    { name: 'HMC MM Auto Ltd.', logo: '/images/companies/logo1.webp' },
+    { name: 'Indigo Technologies', logo: '/images/companies/logo3.jpg' },
+    { name: 'Nidec', logo: '/images/companies/logo4.jpg' },
+    { name: 'Auto-Lek', logo: '/images/companies/autolake.jpg' },
+    { name: 'Samvardhana Motherson', logo: '/images/companies/logo2.jpg' },
+    { name: 'Sidwal', logo: '/images/companies/sidwal.png' },
+  ].map((partner, index) => (
+    <div 
+      key={index} 
+      className="flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+    >
+      <div className="relative w-32 h-20 mb-3">
+        <Image
+          src={partner.logo}
+          alt={`${partner.name} logo`}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+          className="object-contain"
+        />
+      </div>
+      <p className="text-sm text-gray-700 text-center font-medium">
+        {partner.name}
+      </p>
+    </div>
+  ))}
+</div>
+
         </div>
       </div>
-    </section>
+    </section> 
   );
 };
 

@@ -71,15 +71,60 @@ const Hero = () => {
         <FaChevronRight className="w-6 h-6" />
       </button>
 
-      {/* Slide Indicators */}
-      <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 flex gap-2 z-20">
+      {/* Hero Content */}
+      <div className="relative h-full flex items-center z-10">
+        <div className="container mx-auto px-4 pt-20 md:pt-0">
+          <div className="max-w-4xl">
+            {/* Main Title */}
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-8 leading-tight">
+              Modern<br className="md:hidden" />{' '}
+              <span className="block mt-2 md:mt-4">Technologies</span>
+            </h1>
+
+            {/* Subtitle */}
+            <div className="space-y-6 mb-12">
+              <p className="text-xl sm:text-2xl md:text-3xl text-gray-200 font-light leading-relaxed">
+                Your Premier Partner in Advanced Metal Finishing Solutions
+              </p>
+              <p className="text-lg sm:text-xl text-gray-300 leading-relaxed">
+                ISO Certified Excellence in Surface Treatment & Metal Processing
+              </p>
+            </div>
+
+            {/* Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
+  <Link 
+    href="/services"
+    className="bg-orange-500 hover:bg-orange-600 text-white px-6 sm:px-8 md:px-10 py-3 sm:py-4 rounded-lg 
+    transition-all transform hover:scale-105 duration-200 flex items-center justify-center gap-2 text-base sm:text-lg font-medium
+    w-full sm:w-auto lg:w-56 xl:w-64"
+  >
+    Explore Services
+    <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
+  </Link>
+  <Link 
+    href="/contact"
+    className="border-2 border-white/80 hover:bg-white hover:text-black text-white 
+    px-6 sm:px-8 md:px-10 py-3 sm:py-4 rounded-lg transition-colors duration-300 text-base sm:text-lg font-medium text-center
+    w-full sm:w-auto lg:w-56 xl:w-64"
+  >
+    Contact Us
+  </Link>
+</div>
+
+          </div>
+        </div>
+      </div>
+
+      {/* Slide Indicators - Moved up and adjusted for mobile */}
+      <div className="absolute bottom-28 sm:bottom-20 left-1/2 transform -translate-x-1/2 flex gap-2 z-20 ">
         {images.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
             className={`w-2 h-2 rounded-full transition-all ${
               index === currentSlide 
-                ? 'bg-white w-8' 
+                ? 'bg-white w-6 sm:w-8' 
                 : 'bg-white/50 hover:bg-white/80'
             }`}
             aria-label={`Go to slide ${index + 1}`}
@@ -87,49 +132,8 @@ const Hero = () => {
         ))}
       </div>
 
-      {/* Hero Content */}
-      <div className="relative h-full flex items-center z-10">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl">
-            {/* Main Title */}
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-8">
-              Modern<br />Technologies
-            </h1>
-
-            {/* Subtitle */}
-            <div className="space-y-4 mb-12">
-              <p className="text-2xl md:text-3xl text-gray-200 font-light">
-                Your Premier Partner in Advanced Metal Finishing Solutions
-              </p>
-              <p className="text-xl text-gray-300">
-                ISO Certified Excellence in Surface Treatment & Metal Processing
-              </p>
-            </div>
-
-            {/* Buttons */}
-            <div className="flex flex-wrap gap-6">
-              <Link 
-                href="/services"
-                className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg 
-                transition-all transform hover:scale-105 duration-200 flex items-center gap-2 text-lg font-medium"
-              >
-                Explore Services
-                <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
-              </Link>
-              <Link 
-                href="/contact"
-                className="border-2 border-white/80 hover:bg-white hover:text-black text-white 
-                px-8 py-4 rounded-lg transition-colors duration-300 text-lg font-medium"
-              >
-                Contact Us
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      {/* Scroll Indicator - Adjusted position */}
+      <div className="absolute bottom-12 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <svg 
           className="w-6 h-6 text-white/80"
           fill="none" 

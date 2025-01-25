@@ -3,10 +3,12 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
 
   const menuItems = [
     { name: 'Home', href: '/' },
@@ -31,6 +33,13 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const isActivePath = (href) => {
+    if (href === '/') {
+      return pathname === href;
+    }
+    return pathname.startsWith(href);
+  };
 
   return (
     <nav 
@@ -64,7 +73,9 @@ const Navbar = () => {
                 href={item.href}
                 className={`${
                   isScrolled ? 'text-gray-800' : 'text-white'
-                } hover:text-orange-500 transition-colors`}
+                } hover:text-orange-500 transition-colors ${
+                  isActivePath(item.href) ? 'text-orange-500 font-medium' : ''
+                }`}
               >
                 {item.name}
               </Link>
@@ -73,7 +84,7 @@ const Navbar = () => {
               href="/quotation"
               className={`px-6 py-2.5 rounded-full bg-orange-500 text-white font-semibold 
               hover:bg-orange-600 transition-colors transform hover:scale-105 duration-200 
-              shadow-lg hover:shadow-orange-500/30`}
+              shadow-lg hover:shadow-orange-500/30 md:px-8 md:w-36 lg:w-40`}
             >
               Get a Quote
             </Link>
@@ -100,7 +111,9 @@ const Navbar = () => {
                 key={item.name}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className="text-gray-800 hover:text-orange-500 transition-colors"
+                className={`text-gray-800 hover:text-orange-500 transition-colors ${
+                  isActivePath(item.href) ? 'text-orange-500 font-medium' : ''
+                }`}
               >
                 {item.name}
               </Link>

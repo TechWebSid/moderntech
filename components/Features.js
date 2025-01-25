@@ -40,7 +40,7 @@ const Features = () => {
           {features.map((feature) => (
             <div
               key={feature.id}
-              className="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow text-black"
+              className="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow"
             >
               <div className="text-4xl mb-4">{feature.icon}</div>
               <div className="flex items-center gap-2 mb-3">
@@ -57,31 +57,30 @@ const Features = () => {
 
       {/* About Section */}
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Content */}
-          <div>
+          <div className="px-4 lg:px-0">
             <div className="mb-6">
-              <span className="text-orange-500 uppercase font-semibold">
+              <span className="text-orange-500 uppercase font-semibold text-sm md:text-base">
                 ABOUT US
               </span>
-              <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4 text-black">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mt-2 mb-4 text-black">
                 Leading Experts in
-                <br />
+                <br className="hidden md:block" />
                 Anodizing & Surface Treatment
               </h2>
             </div>
             <p className="text-gray-600 mb-6">
-              We specialize in delivering high-quality metal finishing
-              solutions, including anodizing and advanced surface treatment
-              plating, ensuring durability, precision, and excellence for every
-              project.
+              We specialize in delivering high-quality metal finishing solutions,
+              including anodizing and advanced surface treatment plating, ensuring
+              durability, precision, and excellence for every project.
             </p>
             <ul className="space-y-3 mb-8">
               {[
-                "Fitted out with a fur hat and fur boa",
-                "It showed a lady fitted out with a fur hat and fur boa who sat",
-                "Samsa was a travelling salesman and above it there hung a picture that",
-                "Muff that covered the whole of her",
+                "ISO 9001:2015 Certified Company",
+                "State-of-the-art Manufacturing Facility",
+                "Expert Technical Team",
+                "Comprehensive Quality Testing",
               ].map((item, index) => (
                 <li key={index} className="flex items-center gap-2">
                   <span className="text-orange-500">✓</span>
@@ -90,20 +89,21 @@ const Features = () => {
               ))}
             </ul>
             <div className="flex items-center gap-6">
-              <div className="flex items-center gap-2"></div>
-              <button className="bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition-colors">
+              <button className="w-full sm:w-auto bg-orange-500 text-white px-6 py-3 rounded-lg 
+                hover:bg-orange-600 transition-colors text-base font-semibold whitespace-nowrap">
                 MORE ABOUT US
               </button>
             </div>
           </div>
 
           {/* Right Image */}
-          <div className="relative h-[400px]">
+          <div className="relative w-full aspect-[4/3] lg:aspect-square">
             <Image
               src="/images/hero.jpg"
               alt="Modern Industry Illustration"
               fill
-              className="object-contain"
+              className="object-cover rounded-lg"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 40vw"
             />
           </div>
         </div>

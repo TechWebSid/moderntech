@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://moderntechnologies.com';
+  const baseUrl = 'https://modernhubtech.in';
   
   // Core pages
   const routes = [
