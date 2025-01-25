@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { FaFileAlt, FaIndustry, FaTools, FaWhatsapp } from 'react-icons/fa';
 import Link from 'next/link';
+import emailjs from '@emailjs/browser';
 
 export default function Quotation() {
   const [formData, setFormData] = useState({
@@ -18,10 +19,11 @@ export default function Quotation() {
     industry: ''
   });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData);
-  };
+  const [status, setStatus] = useState({
+    submitted: false,
+    submitting: false,
+    info: { error: false, msg: null }
+  });
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -29,6 +31,67 @@ export default function Quotation() {
       ...prev,
       [name]: value
     }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus(prevStatus => ({ ...prevStatus, submitting: true }));
+
+    try {
+      const templateParams = {
+        from_name: formData.name,
+        company: formData.company,
+        email: formData.email,
+        phone: formData.phone,
+        service: formData.service,
+        quantity: formData.quantity,
+        specifications: formData.specifications,
+        timeline: formData.timeline,
+        industry: formData.industry
+      };
+
+      await emailjs.send(
+        'service_kiie2ef', // Replace with your EmailJS service ID
+        'template_2x9i89j', // Replace with your EmailJS template ID
+        templateParams,
+        'qDsoS2uMKBXOSLoXa' // Replace with your EmailJS public key
+      );
+
+      setStatus({
+        submitted: true,
+        submitting: false,
+        info: { error: false, msg: "Thank you! We'll get back to you shortly." }
+      });
+
+      // Clear form
+      setFormData({
+        name: '',
+        company: '',
+        email: '',
+        phone: '',
+        service: '',
+        quantity: '',
+        specifications: '',
+        timeline: '',
+        industry: ''
+      });
+
+      // Reset form status after 5 seconds
+      setTimeout(() => {
+        setStatus({
+          submitted: false,
+          submitting: false,
+          info: { error: false, msg: null }
+        });
+      }, 5000);
+
+    } catch (error) {
+      setStatus({
+        submitted: false,
+        submitting: false,
+        info: { error: true, msg: "An error occurred. Please try again later." }
+      });
+    }
   };
 
   const features = [
@@ -87,6 +150,16 @@ export default function Quotation() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-8">
+            {status.info.msg && (
+              <div className={`mb-6 p-4 rounded-lg ${
+                status.info.error ? 
+                'bg-red-100 text-red-700' : 
+                'bg-green-100 text-green-700'
+              }`}>
+                {status.info.msg}
+              </div>
+            )}
+
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
@@ -204,10 +277,15 @@ export default function Quotation() {
 
               <button
                 type="submit"
-                className="w-full bg-orange-500 text-white py-4 rounded-lg font-semibold hover:bg-orange-600 
-                transition-colors transform hover:scale-105 duration-200 shadow-lg hover:shadow-orange-500/30"
+                disabled={status.submitting}
+                className={`w-full bg-orange-500 text-white py-4 rounded-lg font-semibold 
+                transition-all transform hover:scale-105 duration-200 shadow-lg hover:shadow-orange-500/30
+                ${status.submitting ? 'opacity-70 cursor-not-allowed' : 'hover:bg-orange-600'}`}
               >
-                Submit Quote Request
+                {status.submitting ? 
+                  'Submitting...' : 
+                  'Submit Quote Request'
+                }
               </button>
             </form>
           </div>
