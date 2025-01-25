@@ -126,7 +126,7 @@ const Experience = () => {
               { name: 'Nidec', logo: '/images/companies/logo4.jpg' },
               { name: 'Auto-Lek', logo: '/images/companies/autolake.jpg' },
               { name: 'Samvardhana Motherson', logo: '/images/companies/logo2.jpg' },
-              { name: 'Knorr Bremse', logo: '/images/companies/logo6.webp' }
+              { name: 'Sidwal', logo: '/images/companies/sidwal.png' }
             ].map((partner, index) => (
               <div 
                 key={index} 

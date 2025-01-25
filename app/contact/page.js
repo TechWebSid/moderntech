@@ -307,4 +307,22 @@ export default function Contact() {
       <Footer />
     </main>
   );
-} 
+}
+
+export const metadata = {
+  title: 'Contact Us | Metal Finishing Services in Faridabad',
+  description: 'Get in touch with Modern Technologies for expert metal finishing solutions. Located in Faridabad, offering comprehensive surface treatment services across India.',
+  keywords: ['contact metal finishing', 'surface treatment contact', 'Modern Technologies contact', 'metal finishing Faridabad', 'industrial coating contact'],
+  openGraph: {
+    title: 'Contact Modern Technologies - Metal Finishing Solutions',
+    description: 'Reach out for professional metal finishing services. Get quotes, technical support, and expert consultation.',
+    images: [
+      {
+        url: '/images/contact-og.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Contact Modern Technologies',
+      },
+    ],
+  }
+}; 

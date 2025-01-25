@@ -139,4 +139,22 @@ export default function BlogList() {
       <Footer />
     </main>
   );
-} 
+}
+
+export const metadata = {
+  title: 'Metal Finishing Blog | Industry Insights & Updates',
+  description: 'Stay updated with the latest trends, technologies, and insights in metal finishing. Expert articles on surface treatment, anodizing, and industrial coating.',
+  keywords: ['metal finishing blog', 'surface treatment articles', 'anodizing insights', 'industrial coating blog', 'metal processing updates'],
+  openGraph: {
+    title: 'Metal Finishing Blog - Modern Technologies',
+    description: 'Expert insights and industry updates in metal finishing and surface treatment technologies.',
+    images: [
+      {
+        url: '/images/blog-og.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Metal Finishing Blog',
+      },
+    ],
+  }
+}; 

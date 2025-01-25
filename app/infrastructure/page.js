@@ -7,8 +7,21 @@ import {
 } from 'react-icons/fa';
 
 export const metadata = {
-  title: 'Infrastructure - Modern Technologies',
-  description: 'State-of-the-art metal finishing facilities and equipment at Modern Technologies.',
+  title: 'Infrastructure & Facilities | Modern Metal Finishing Plant',
+  description: 'Explore our state-of-the-art metal finishing facilities. Advanced phosphating line, anodizing equipment, and quality testing laboratory in Faridabad.',
+  keywords: ['metal finishing facility', 'anodizing plant', 'phosphating line', 'surface treatment infrastructure', 'quality testing lab'],
+  openGraph: {
+    title: 'Infrastructure - Modern Technologies',
+    description: 'State-of-the-art metal finishing facilities with advanced equipment and testing capabilities.',
+    images: [
+      {
+        url: '/images/infrastructure-og.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Modern Technologies Manufacturing Facility',
+      },
+    ],
+  }
 };
 
 const processingLines = [

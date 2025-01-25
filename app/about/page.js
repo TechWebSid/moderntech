@@ -4,8 +4,21 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata = {
-  title: 'About Us - Modern Technologies',
-  description: 'Leading surface metal finishing company established in 2018, serving automotive and non-automotive sectors with ISO 9001:2015 certification.',
+  title: 'About Us | Leading Metal Finishing Company in India',
+  description: 'Modern Technologies, established in 2018, is a premier metal finishing company in India. ISO 9001:2015 certified with expertise in surface treatment and metal processing.',
+  keywords: ['metal finishing company', 'surface treatment India', 'Modern Technologies about', 'metal processing company', 'ISO certified metal finishing'],
+  openGraph: {
+    title: 'About Modern Technologies - Metal Finishing Excellence',
+    description: 'Discover our journey of excellence in metal finishing since 2018. Learn about our state-of-the-art facilities and expert team.',
+    images: [
+      {
+        url: '/images/about-og.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Modern Technologies Facility and Team',
+      },
+    ],
+  }
 };
 
 const stats = [

@@ -4,8 +4,21 @@ import { FaIndustry, FaFlask, FaCog, FaShieldAlt, FaCheckCircle } from 'react-ic
 import Footer from '@/components/Footer';
 
 export const metadata = {
-  title: 'Our Services - Modern Technologies',
-  description: 'Comprehensive metal finishing solutions including Phosphating, Anodizing, SS Passivation, and more.',
+  title: 'Metal Finishing Services | Anodizing, Phosphating & Surface Treatment',
+  description: 'Comprehensive metal finishing solutions including phosphating, anodizing, SS passivation, and surface treatment. ISO certified processes for superior quality.',
+  keywords: ['metal finishing services', 'anodizing', 'phosphating', 'surface treatment', 'SS passivation', 'industrial coating'],
+  openGraph: {
+    title: 'Metal Finishing Services - Modern Technologies',
+    description: 'Expert metal finishing solutions with state-of-the-art facilities. Discover our comprehensive range of services.',
+    images: [
+      {
+        url: '/images/services-og.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Metal Finishing Services at Modern Technologies',
+      },
+    ],
+  }
 };
 
 const mainServices = [

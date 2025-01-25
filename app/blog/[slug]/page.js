@@ -38,6 +38,32 @@ const blogData = {
   // Add data for other blog posts
 };
 
+// Add this function to generate structured data
+function generateStructuredData(post) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.excerpt,
+    image: post.mainImage,
+    datePublished: post.date,
+    dateModified: post.lastModified,
+    author: {
+      '@type': 'Organization',
+      name: 'Modern Technologies',
+      url: 'https://moderntechnologies.com'
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Modern Technologies',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://moderntechnologies.com/images/logo.png'
+      }
+    }
+  };
+}
+
 export default function BlogPost() {
   const params = useParams();
   const blog = blogData[params.slug];
@@ -129,6 +155,46 @@ export default function BlogPost() {
       </article>
 
       <Footer />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(generateStructuredData(blog))
+        }}
+      />
     </main>
   );
+}
+
+export async function generateMetadata({ params }) {
+  // This would typically fetch data from your CMS or database
+  const post = blogData[params.slug];
+  
+  if (!post) {
+    return {
+      title: 'Blog Post Not Found',
+      description: 'The requested blog post could not be found.'
+    };
+  }
+
+  return {
+    title: `${post.title} | Modern Technologies Blog`,
+    description: post.excerpt || 'Read our expert insights on metal finishing technologies and industry updates.',
+    keywords: ['metal finishing', 'surface treatment', 'anodizing', post.category.toLowerCase(), 'industrial coating'],
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      type: 'article',
+      publishedTime: post.date,
+      authors: ['Modern Technologies'],
+      images: [
+        {
+          url: post.mainImage,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
+    }
+  };
 } 

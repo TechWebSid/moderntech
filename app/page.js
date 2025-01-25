@@ -7,9 +7,29 @@ import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
 export const metadata = {
-  title: 'Modern Technologies - Premier Metal Finishing Solutions',
-  description: 'Leading provider of metal finishing services including SS Passivation, Anodic Coating, and Surface Treatment. ISO certified company delivering excellence in metal processing.',
-  keywords: 'metal finishing, SS passivation, anodic coating, phosphating, surface treatment, Modern Technologies, Prashant Shukla',
+  title: 'Modern Technologies | Premier Metal Finishing Solutions in India',
+  description: 'Leading provider of metal finishing services including anodizing, phosphating, and surface treatment. ISO 9001:2015 certified company in Faridabad.',
+  keywords: [
+    'metal finishing India',
+    'anodizing services',
+    'phosphating treatment',
+    'surface treatment company',
+    'industrial coating Faridabad',
+    'ISO certified metal finishing',
+    'Modern Technologies'
+  ],
+  openGraph: {
+    title: 'Modern Technologies - Metal Finishing Excellence',
+    description: 'Premier metal finishing solutions provider in India. Expert surface treatment services with state-of-the-art facilities.',
+    images: [
+      {
+        url: '/images/home-og.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Modern Technologies Home',
+      },
+    ],
+  }
 };
 
 export default function Home() {
