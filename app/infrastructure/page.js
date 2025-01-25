@@ -157,19 +157,19 @@ export default function Infrastructure() {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               <div className="p-6 bg-gray-50 rounded-lg">
                 <FaCog className="w-12 h-12 text-teal-600 mx-auto mb-4" />
-                <h3 className="font-semibold">Cutting-edge Machinery</h3>
+                <h3 className="font-semibold text-black">Cutting-edge Machinery</h3>
               </div>
               <div className="p-6 bg-gray-50 rounded-lg">
                 <FaIndustry className="w-12 h-12 text-teal-600 mx-auto mb-4" />
-                <h3 className="font-semibold">Automated Processes</h3>
+                <h3 className="font-semibold text-black">Automated Processes</h3>
               </div>
               <div className="p-6 bg-gray-50 rounded-lg">
                 <FaMicroscope className="w-12 h-12 text-teal-600 mx-auto mb-4" />
-                <h3 className="font-semibold">Quality Labs</h3>
+                <h3 className="font-semibold text-black">Quality Labs</h3>
               </div>
               <div className="p-6 bg-gray-50 rounded-lg">
                 <FaLeaf className="w-12 h-12 text-teal-600 mx-auto mb-4" />
-                <h3 className="font-semibold">Eco-friendly Operations</h3>
+                <h3 className="font-semibold text-black">Eco-friendly Operations</h3>
               </div>
             </div>
           </div>
@@ -334,13 +334,15 @@ export default function Infrastructure() {
           <p className="text-xl mb-8">
             Contact us to learn more about our facilities or schedule a visit today!
           </p>
+         <Link href="/contact">
           <button className="bg-white text-teal-800 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
             Get in Touch
           </button>
+         </Link>
         </div>
       </section>
       <Link
-        href="https://wa.me/918957035412" // Replace with your WhatsApp number
+        href="https://wa.me/919650702747" // Replace with your WhatsApp number
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-8 right-8 bg-green-500 text-white p-4 rounded-full shadow-lg 

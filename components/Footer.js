@@ -39,7 +39,7 @@ const Footer = () => {
                 </svg>
                 <div>
                   <h4 className="text-white font-semibold">Phone</h4>
-                  <p>(+61)-324-56-789</p>
+                  <p>+91 9650702747</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -48,8 +48,8 @@ const Footer = () => {
                 </svg>
                 <div>
                   <h4 className="text-white font-semibold">Email</h4>
-                  <p>info@moderntechnologies.com</p>
-                </div>
+                  <p>moderntechnologies.fbd12@gmail.com</p>
+                </div>  
               </div>
             </div>
           </div>

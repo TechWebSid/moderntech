@@ -59,9 +59,8 @@ export default function Contact() {
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-4">Call Us</h3>
               <p className="text-gray-600">
-                Main: +91 98765 43210
-                <br />
-                Support: +91 98765 43211
+                 +91 9650702747
+               
               </p>
             </div>
 
@@ -72,7 +71,7 @@ export default function Contact() {
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-4">Email Us</h3>
               <p className="text-gray-600">
-                info@moderntechnologies.com
+                moderntechnologies.fbd12@gmail.com
                 <br />
                 support@moderntechnologies.com
               </p>
@@ -87,7 +86,7 @@ export default function Contact() {
               <p className="text-gray-600">
                 Monday - Saturday
                 <br />
-                9:00 AM - 6:00 PM
+                9:00 AM - 5:00 PM
               </p>
             </div>
           </div>
@@ -98,7 +97,7 @@ export default function Contact() {
 
       {/* Floating WhatsApp Button */}
       <Link
-        href="https://wa.me/918957035412" // Replace with your WhatsApp number
+        href="https://wa.me/919650702747" // Replace with your WhatsApp number
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-8 right-8 bg-green-500 text-white p-4 rounded-full shadow-lg 

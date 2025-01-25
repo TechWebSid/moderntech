@@ -292,7 +292,7 @@ export default function Quotation() {
         </div>
       </section>
       <Link
-        href="https://wa.me/918957035412" // Replace with your WhatsApp number
+        href="https://wa.me/919650702747" // Replace with your WhatsApp number
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-8 right-8 bg-green-500 text-white p-4 rounded-full shadow-lg 

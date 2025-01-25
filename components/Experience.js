@@ -89,16 +89,16 @@ const Experience = () => {
         </div>
 
         {/* Team Section */}
-        <div className="text-center mb-16">
+        {/* <div className="text-center mb-16">
           <span className="text-orange-500 uppercase font-semibold">MEMBERS</span>
           <h2 className="text-3xl md:text-4xl font-bold mt-2 text-gray-500">
             Our Dedicated Team<br />
             <span className="text-gray-500">For your service</span>
           </h2>
-        </div>
+        </div> */}
 
         {/* Team Grid with Icons */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {team.map((member, index) => (
             <div key={index} className="group text-center">
               <div className={`mx-auto w-32 h-32 rounded-full ${member.bgColor} flex items-center justify-center mb-4 transition-transform group-hover:scale-110`}>
@@ -108,7 +108,7 @@ const Experience = () => {
               <p className="text-orange-500">{member.role}</p>
             </div>
           ))}
-        </div>
+        </div> */}
 
         {/* Partner Logos Section */}
         <div className="mt-20">

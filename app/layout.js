@@ -4,7 +4,7 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  metadataBase: new URL('https://moderntechnologies.com'),
+  metadataBase: new URL('https://modernhubtech.in'),
   title: {
     default: 'Modern Technologies - Premier Metal Finishing Solutions in India',
     template: '%s | Modern Technologies'
@@ -22,7 +22,7 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_IN',
-    url: 'https://moderntechnologies.com',
+    url: 'https://modernhubtech.in',
     siteName: 'Modern Technologies',
     title: 'Modern Technologies - Premier Metal Finishing Solutions',
     description: 'Leading metal finishing company offering comprehensive surface treatment solutions. ISO 9001:2015 certified excellence.',
@@ -61,7 +61,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="canonical" href="https://moderntechnologies.com" />
+        <link rel="canonical" href="https://modernhubtech.in" />
         <meta name="theme-color" content="#0B1223" />
       </head>
       <body className={inter.className}>{children}</body>

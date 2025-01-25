@@ -1,52 +1,53 @@
-import { FaIndustry, FaCogs, FaShieldAlt, FaFlask, FaBolt, FaCheck } from 'react-icons/fa';
-
+import { FaIndustry, FaCogs, FaShieldAlt, FaFlask, FaBolt, FaCheck, FaGem } from 'react-icons/fa';
+import Link from 'next/link';
 const Services = () => {
   const services = [
     {
-      title: "Phosphating",
-      description: "Advanced zinc and manganese phosphating treatments providing superior corrosion resistance and excellent paint adhesion for automotive and industrial components.",
-      icon: FaShieldAlt,
-    },
-    {
       title: "Hard Anodizing",
-      description: "Specialized hard anodizing process creating durable, wear-resistant surfaces with superior hardness up to 100 microns thickness.",
+      description: "Durable, wear-resistant anodized surfaces with up to 100 microns thickness.",
       icon: FaBolt,
     },
     {
       title: "Soft Anodizing",
-      description: "Decorative and protective anodizing solutions for aluminum and its alloys, perfect for architectural and aesthetic applications.",
+      description: "Decorative anodizing for aluminum, ideal for architectural applications.",
       icon: FaCogs,
     },
     {
-      title: "SS Passivation",
-      description: "Chemical passivation process for stainless steel enhancing corrosion resistance and surface finish quality.",
+      title: "Anodic Coating",
+      description: "Protective oxide layer for enhanced aluminum durability.",
+      icon: FaShieldAlt,
+    },
+    {
+      title: "Chromatic Conversion Coating",
+      description: "Corrosion-resistant coating for stainless steel surfaces.",
       icon: FaFlask,
     },
     {
-      title: "Electro Less Nickel",
-      description: "High-quality electro less nickel plating services offering excellent corrosion protection for various metal components.",
-      icon: FaIndustry,
-    },
-    {
-      title: "Chemical Conversion",
-      description: "Advanced surface conversion treatments ensuring superior adhesion and corrosion resistance for various metals.",
-      icon: FaCheck,
-    },
-    {
-      title: "Anodic Coating",
-      description: "A protective aluminum oxide layer formed on aluminum surfaces for enhanced durability.",
-      icon: FaIndustry,
-    },
-    {
-      title: "Chromatic Conversion Plating",
-      description: "A coating process that enhances corrosion resistance and conductivity.",
-      icon: FaCheck,
-    },
-    {
       title: "Trivalent Passivation",
-      description: "A chromium-based treatment to improve corrosion resistance on metal surfaces.",
-      icon: FaShieldAlt,
-    }
+      description: "Eco-friendly passivation for superior corrosion resistance.",
+      icon: FaIndustry,
+    },
+    {
+      title: "SS Passivation",
+      description: "Advanced treatment for improved adhesion and corrosion resistance.",
+      icon: FaCheck,
+    },
+    {
+      title: "E.N.P Coating",
+      description: "Electroless nickel plating for excellent metal protection.",
+      icon: FaIndustry,
+    },
+    {
+      title: "All Types Phosphating",
+      description: "Corrosion-resistant coating for enhanced conductivity.",
+      icon: FaCheck,
+    },
+    
+    {
+      title: "Metal Polishing",
+      description: "High-quality polishing for a smooth, reflective metal finish.",
+      icon: FaGem,
+    },
     
   ];
 
@@ -91,9 +92,11 @@ const Services = () => {
               <p className="text-gray-400 mb-6">
                 {service.description}
               </p>
-              <button className="text-orange-500 hover:text-orange-400 transition-colors text-sm font-semibold">
-                READ MORE
-              </button>
+              <Link href="/services">
+                <button className="text-orange-500 hover:text-orange-400 transition-colors text-sm font-semibold">
+                  READ MORE
+                </button>
+              </Link>
             </div>
           ))}
         </div>
