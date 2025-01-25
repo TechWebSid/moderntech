@@ -3,6 +3,11 @@ import Image from 'next/image';
 import { FaBook, FaClock, FaArrowRight } from 'react-icons/fa';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import { FaWhatsapp } from 'react-icons/fa';
+
+
+
+
 
 // Blog data that would typically come from a CMS or database
 const blogs = [
@@ -135,7 +140,16 @@ export default function BlogList() {
           </div>
         </div>
       </section>
-
+      <Link
+        href="https://wa.me/918957035412" // Replace with your WhatsApp number
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-8 right-8 bg-green-500 text-white p-4 rounded-full shadow-lg 
+        hover:bg-green-600 transition-all transform hover:scale-110 z-50"
+        aria-label="Chat on WhatsApp"
+      >
+        <FaWhatsapp className="w-8 h-8" />
+      </Link>
       <Footer />
     </main>
   );

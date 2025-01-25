@@ -1,8 +1,9 @@
-'use client'
+"use client"
 import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { FaFileAlt, FaIndustry, FaTools } from 'react-icons/fa';
+import { FaFileAlt, FaIndustry, FaTools, FaWhatsapp } from 'react-icons/fa';
+import Link from 'next/link';
 
 export default function Quotation() {
   const [formData, setFormData] = useState({
@@ -212,26 +213,18 @@ export default function Quotation() {
           </div>
         </div>
       </section>
-
+      <Link
+        href="https://wa.me/918957035412" // Replace with your WhatsApp number
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-8 right-8 bg-green-500 text-white p-4 rounded-full shadow-lg 
+        hover:bg-green-600 transition-all transform hover:scale-110 z-50"
+        aria-label="Chat on WhatsApp"
+      >
+        <FaWhatsapp className="w-8 h-8" />
+      </Link>
       <Footer />
     </main>
   );
 }
 
-export const metadata = {
-  title: 'Get a Quote | Metal Finishing Services Quote',
-  description: 'Request a detailed quote for metal finishing services. Competitive pricing for phosphating, anodizing, and surface treatment solutions.',
-  keywords: ['metal finishing quote', 'surface treatment cost', 'anodizing services price', 'metal coating quote', 'industrial finishing estimate'],
-  openGraph: {
-    title: 'Request a Quote - Modern Technologies',
-    description: 'Get detailed pricing for your metal finishing requirements. Fast and professional quote service.',
-    images: [
-      {
-        url: '/images/quote-og.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Request Metal Finishing Quote',
-      },
-    ],
-  }
-}; 

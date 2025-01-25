@@ -2,6 +2,8 @@ import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import { FaIndustry, FaFlask, FaCog, FaShieldAlt, FaCheckCircle } from 'react-icons/fa';
 import Footer from '@/components/Footer';
+import Link from 'next/link';
+import { FaWhatsapp } from 'react-icons/fa';
 
 export const metadata = {
   title: 'Metal Finishing Services | Anodizing, Phosphating & Surface Treatment',
@@ -233,6 +235,16 @@ export default function Services() {
           </div>
         </div>
       </section>
+      <Link
+        href="https://wa.me/918957035412" // Replace with your WhatsApp number
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-8 right-8 bg-green-500 text-white p-4 rounded-full shadow-lg 
+        hover:bg-green-600 transition-all transform hover:scale-110 z-50"
+        aria-label="Chat on WhatsApp"
+      >
+        <FaWhatsapp className="w-8 h-8" />
+      </Link>
       <Footer />
     </main>
   );
