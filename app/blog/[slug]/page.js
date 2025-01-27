@@ -2,11 +2,11 @@
 import { useParams } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaArrowLeft, FaClock, FaCalendar, FaQuoteRight, FaShare } from 'react-icons/fa';
+import { FaArrowLeft, FaClock, FaCalendar, FaQuoteRight } from 'react-icons/fa';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
-// This would typically come from a CMS or database
+// Blog data (this would typically come from an API or CMS)
 const blogData = {
   'what-is-metal-finishing': {
     title: "What Is Metal Finishing? A Beginner's Guide",
@@ -32,37 +32,10 @@ const blogData = {
         type: 'quote',
         content: "Metal finishing can increase a product's lifespan by up to 10 times while improving its aesthetic appeal."
       },
-      // Add more content sections as needed
     ]
   },
-  // Add data for other blog posts
+  // Add other blog posts data here
 };
-
-// Add this function to generate structured data
-function generateStructuredData(post) {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
-    headline: post.title,
-    description: post.excerpt,
-    image: post.mainImage,
-    datePublished: post.date,
-    dateModified: post.lastModified,
-    author: {
-      '@type': 'Organization',
-      name: 'Modern Technologies',
-      url: 'https://moderntechnologies.com'
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Modern Technologies',
-      logo: {
-        '@type': 'ImageObject',
-        url: 'https://moderntechnologies.com/images/logo.png'
-      }
-    }
-  };
-}
 
 export default function BlogPost() {
   const params = useParams();
@@ -148,20 +121,11 @@ export default function BlogPost() {
                 }
               })}
             </div>
-
-          
           </div>
         </div>
       </article>
 
       <Footer />
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(generateStructuredData(blog))
-        }}
-      />
     </main>
   );
 }
