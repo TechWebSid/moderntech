@@ -56,8 +56,8 @@ export default function About() {
         <Navbar />
       {/* Hero Section */}
       <section className="relative h-[60vh] bg-teal-800 flex items-center">
-        <div className="absolute inset-0 bg-gradient-to-r from-teal-900/90 to-teal-800/80" />
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="absolute inset-0 bg-gradient-to-r from-teal-900/90 to-teal-800/80 " />
+        <div className="container mx-auto px-4 relative z-10 mt-10">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
             Our Journey of Excellence
           </h1>
@@ -126,22 +126,19 @@ export default function About() {
           <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">Our Leadership</h2>
           <div className="max-w-3xl mx-auto bg-gradient-to-r from-teal-50 to-white p-8 rounded-lg shadow-lg">
             <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="w-48 h-48 relative rounded-full overflow-hidden">
+              {/* <div className="w-48 h-48 relative rounded-full overflow-hidden">
                 <Image
                   src="/images/founder.jpg"
                   alt="Mr. Prashant Shukla"
                   fill
                   className="object-cover"
                 />
-              </div>
+              </div> */}
               <div>
                 <h3 className="text-2xl font-bold text-gray-800 mb-2">Mr. Prashant Shukla</h3>
                 <p className="text-teal-600 font-semibold mb-4">Founder & Managing Director</p>
                 <p className="text-gray-600">
-                  With a Diploma in Chemicals and over 15 years of valuable experience in metal finishing, 
-                  Mr. Shukla has transformed his expertise into a thriving business. His vision and 
-                  leadership have been instrumental in establishing Modern Technologies as a trusted name 
-                  in the surface treatment industry.
+                With over 15 years of extensive experience in metal finishing, Mr. Prashant Shukla has successfully transformed his expertise into a thriving enterprise. His visionary leadership and strategic direction have been pivotal in positioning Modern Technologies as a trusted leader in the surface treatment industry.
                 </p>
               </div>
             </div>

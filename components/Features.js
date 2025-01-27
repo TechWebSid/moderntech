@@ -99,7 +99,7 @@ const Features = () => {
           {/* Right Image */}
           <div className="relative w-full aspect-[4/3] lg:aspect-square">
             <Image
-              src="/images/hero.jpg"
+              src="/images/herobg2.jpg"
               alt="Modern Industry Illustration"
               fill
               className="object-cover rounded-lg"

@@ -9,7 +9,7 @@ const Hero = () => {
     '/images/herobg2.jpg',
     '/images/herobg1.jpg',  
     '/images/herobg3.jpg',
-    '/images/hero.jpg',
+    '/images/herobg2.jpg',
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
