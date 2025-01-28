@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
- 
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -21,9 +21,9 @@ const nextConfig = {
         hostname: 'placehold.co',
         port: '',
         pathname: '/**',
-      }
+      },
     ],
   },
-  }
+};
 
-module.exports = nextConfig 
+module.exports = nextConfig;
