@@ -88,7 +88,7 @@ const Footer = () => {
               </div>
               <div className="flex items-start gap-3">
                 <FaEnvelope className="text-orange-500 mt-1 flex-shrink-0" size={20} />
-                <p className="break-words">info@modernhubtech.in</p>
+                <p className="break-words">info@moderntechhub.in</p>
               </div>
               <div className="flex items-center gap-3">
                 <FaClock className="text-orange-500 flex-shrink-0" size={20} />

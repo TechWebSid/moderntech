@@ -5,7 +5,7 @@ import ResponsiveWrapper from '@/components/ResponsiveWrapper';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  metadataBase: new URL('https://modernhubtech.in'),
+  metadataBase: new URL('https://moderntechhub.in'),
   title: {
     default: 'Modern Technologies - Premier Metal Finishing Solutions in India',
     template: '%s | Modern Technologies'
@@ -39,7 +39,7 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_IN',
-    url: 'https://modernhubtech.in', 
+    url: 'https://moderntechhub.in', 
     siteName: 'Modern Technologies',
     title: 'Modern Technologies - Premier Metal Finishing Solutions',
     description: 'Leading metal finishing company offering comprehensive surface treatment solutions. ISO 9001:2015 certified excellence.',
@@ -79,7 +79,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-        <link rel="canonical" href="https://modernhubtech.in" />
+        <link rel="canonical" href="https://moderntechhub.in" />
         <link rel="icon" type="image/png" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/favicon.png" />
         <meta name="theme-color" content="#0B1223" />
