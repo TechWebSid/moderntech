@@ -28,9 +28,6 @@ export const metadata = {
   authors: [{ name: 'ModernTechHub' }],
   creator: 'ModernTechHub',
   publisher: 'ModernTechHub',
-  alternates: {
-    canonical: 'https://moderntechhub.in'
-  },
   icons: {
     icon: [
       { url: '/favicon.png', type: 'image/png' },
