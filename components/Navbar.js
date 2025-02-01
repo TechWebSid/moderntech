@@ -14,8 +14,7 @@ const Navbar = () => {
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/services' },
-    // { name: 'Projects', href: '/projects' },
-    {name: 'Blog', href: '/blog'},
+    { name: 'Blog', href: '/blog'},
     { name: 'Infrastructure', href: '/infrastructure' },
     { name: 'Contact', href: '/contact' },
   ];
@@ -44,14 +43,14 @@ const Navbar = () => {
   return (
     <nav 
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-gray-300/90 backdrop-blur-md shadow-lg' : 'bg-transparent'
+        isScrolled ? 'bg-[#0B1223]/95 backdrop-blur-md shadow-lg' : 'bg-[#0B1223]'
       }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
-            <div className="relative w-24 h-24">
+            <div className="relative w-16 h-16">
               <Image
                 src="/images/mt_logo.png"
                 alt="Modern Technologies Logo"
@@ -60,20 +59,23 @@ const Navbar = () => {
                 priority
               />
             </div>
-            <span className={`text-2xl font-bold ${isScrolled ? 'text-gray-800' : 'text-white'}`}>
-              Modern Technologies
-            </span>
+            <div className="flex flex-col">
+              <span className="text-xl font-bold text-white whitespace-nowrap">
+                Modern
+              </span>
+              <span className="text-xl font-bold text-white whitespace-nowrap">
+                Technologies
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
             {menuItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className={`${
-                  isScrolled ? 'text-gray-800' : 'text-white'
-                } hover:text-orange-500 transition-colors ${
+                className={`text-white hover:text-orange-500 transition-colors text-sm lg:text-base ${
                   isActivePath(item.href) ? 'text-orange-500 font-medium' : ''
                 }`}
               >
@@ -82,9 +84,9 @@ const Navbar = () => {
             ))}
             <Link
               href="/quotation"
-              className={`px-6 py-2.5 rounded-full bg-orange-500 text-white font-semibold 
+              className="px-6 py-2 rounded-full bg-orange-500 text-white text-sm lg:text-base font-semibold 
               hover:bg-orange-600 transition-colors transform hover:scale-105 duration-200 
-              shadow-lg hover:shadow-orange-500/30 md:px-8 md:w-36 lg:w-40`}
+              shadow-lg hover:shadow-orange-500/30 whitespace-nowrap"
             >
               Get a Quote
             </Link>
@@ -93,7 +95,8 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className={`md:hidden ${isScrolled ? 'text-gray-800' : 'text-white'}`}
+            className="md:hidden text-white"
+            aria-label="Toggle menu"
           >
             {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
           </button>
@@ -101,7 +104,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`md:hidden absolute left-0 right-0 bg-white shadow-lg transition-all duration-300 ease-in-out ${
+          className={`md:hidden absolute left-0 right-0 bg-[#0B1223] shadow-lg transition-all duration-300 ease-in-out ${
             isOpen ? 'top-20 opacity-100' : '-top-96 opacity-0'
           }`}
         >
@@ -111,7 +114,7 @@ const Navbar = () => {
                 key={item.name}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className={`text-gray-800 hover:text-orange-500 transition-colors ${
+                className={`text-white hover:text-orange-500 transition-colors ${
                   isActivePath(item.href) ? 'text-orange-500 font-medium' : ''
                 }`}
               >
