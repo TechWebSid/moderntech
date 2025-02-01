@@ -15,7 +15,7 @@ export default function BlogPost() {
         {/* Hero Section */}
         <div className="relative h-[60vh] bg-[#0B1223]">
           <Image
-            src="/images/blog2.jpg"
+            src="/images/blog/blog2.jpg"
             alt="Types of Metal Finishing Processes"
             fill
             className="object-cover opacity-30"

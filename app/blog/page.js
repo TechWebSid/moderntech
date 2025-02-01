@@ -15,7 +15,7 @@ const blogs = [
     slug: 'what-is-metal-finishing',
     title: "What Is Metal Finishing? A Beginner's Guide",
     excerpt: "Discover the fundamentals of metal finishing processes and their crucial role in modern manufacturing...",
-    image: "/images/blog1.jpg",
+    image: "/images/blog/blog1.jpg",
     readTime: "5 min read",
     category: "Educational",
     date: "2024-03-15"
@@ -24,46 +24,51 @@ const blogs = [
     slug: 'types-of-metal-finishing',
     title: "Understanding Different Types of Metal Finishing Processes",
     excerpt: "Explore various metal finishing techniques from electroplating to powder coating...",
-    image: "/images/blog2.jpg",
+    image: "/images/blog/blog2.jpg",
     readTime: "7 min read",
     category: "Educational",
     date: "2024-03-10"
+
   },
   {
     slug: 'choosing-right-process',
     title: "How to Choose the Right Metal Finishing Process",
     excerpt: "Learn the key factors to consider when selecting a metal finishing process for your project...",
-    image: "/images/blog3.jpg",
+    image: "/images/blog/blog3.jpg",
     readTime: "6 min read",
     category: "Guide",
     date: "2024-03-05"
+
   },
   {
     slug: 'automation-in-finishing',
     title: "How Automation Is Revolutionizing Metal Finishing",
     excerpt: "Discover how robotics and AI are transforming the metal finishing industry...",
-    image: "/images/blog4.jpg",
+    image: "/images/blog/blog4.jpg",
     readTime: "8 min read",
     category: "Technology",
     date: "2024-02-28"
+
   },
   {
     slug: 'latest-equipment',
     title: "The Latest Equipment Enhancing Metal Finishing Quality",
     excerpt: "Explore cutting-edge technologies that are setting new standards in metal finishing...",
-        image: "/images/blog5.jpg",
+    image: "/images/blog/blog5.jpg",
     readTime: "6 min read",
     category: "Technology",
     date: "2024-02-20"
+
   },
   {
     slug: 'why-choose-us',
     title: "Why Choose Us for Your Metal Finishing Needs?",
     excerpt: "Discover what sets Modern Technologies apart in the metal finishing industry...",
-    image: "/images/blog6.jpg",
+    image: "/images/blog/blog6.jpg",
     readTime: "4 min read",
     category: "Company",
     date: "2024-02-15"
+
   }
 ];
 

@@ -7,14 +7,30 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata = {
   metadataBase: new URL('https://moderntechhub.in'),
   title: {
-    default: 'Modern Technologies - Premier Metal Finishing Solutions in India',
-    template: '%s | Modern Technologies'
+    default: 'ModernTechHub - Best Metal Finishing Services in Faridabad, India',
+    template: '%s | ModernTechHub - Metal Finishing Experts'
   },
-  description: 'Leading metal finishing company in India offering anodizing, phosphating, and surface treatment solutions. ISO 9001:2015 certified with state-of-the-art facilities.',
-  keywords: ['metal finishing', 'anodizing', 'phosphating', 'surface treatment', 'metal coating', 'industrial finishing', 'Modern Technologies', 'India'],
-  authors: [{ name: 'Modern Technologies' }],
-  creator: 'Modern Technologies',
-  publisher: 'Modern Technologies',
+  description: 'Leading metal finishing company in Faridabad offering anodizing, phosphating, and surface treatment solutions. ISO certified with 20+ years of excellence in industrial metal finishing.',
+  keywords: [
+    'metal finishing Faridabad',
+    'anodizing services',
+    'hard anodizing',
+    'soft anodizing',
+    'phosphating',
+    'chemical coating',
+    'electroplating',
+    'surface treatment',
+    'ModernTechHub',
+    'metal finishing company near me',
+    'industrial coating Faridabad',
+    'best metal finishing services'
+  ],
+  authors: [{ name: 'ModernTechHub' }],
+  creator: 'ModernTechHub',
+  publisher: 'ModernTechHub',
+  alternates: {
+    canonical: 'https://moderntechhub.in'
+  },
   icons: {
     icon: [
       { url: '/favicon.png', type: 'image/png' },
@@ -39,23 +55,23 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_IN',
-    url: 'https://moderntechhub.in', 
-    siteName: 'Modern Technologies',
-    title: 'Modern Technologies - Premier Metal Finishing Solutions',
-    description: 'Leading metal finishing company offering comprehensive surface treatment solutions. ISO 9001:2015 certified excellence.',
+    url: 'https://moderntechhub.in',
+    siteName: 'ModernTechHub',
+    title: 'ModernTechHub - Premier Metal Finishing Solutions in Faridabad',
+    description: 'Top-rated metal finishing company in Faridabad offering comprehensive surface treatment solutions including anodizing, phosphating, and electroplating. ISO 9001:2015 certified.',
     images: [
       {
         url: '/images/mt_logo.png',
         width: 1200,
         height: 630,
-        alt: 'Modern Technologies Logo',
+        alt: 'ModernTechHub - Metal Finishing Excellence',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Modern Technologies - Metal Finishing Excellence',
-    description: 'Premier metal finishing and surface treatment solutions in India',
+    title: 'ModernTechHub - Metal Finishing Excellence in Faridabad',
+    description: 'Premier metal finishing and surface treatment solutions in Faridabad, India. Specializing in anodizing, phosphating, and electroplating.',
     images: ['/images/twitter-image.jpg'],
   },
   robots: {
@@ -72,17 +88,27 @@ export const metadata = {
   verification: {
     google: 'your-google-verification-code',
   },
+  other: {
+    'geo.region': 'IN-HR',
+    'geo.placename': 'Faridabad',
+    'geo.position': '28.4089;77.3178',
+    'ICBM': '28.4089, 77.3178'
+  }
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
         <link rel="canonical" href="https://moderntechhub.in" />
         <link rel="icon" type="image/png" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/favicon.png" />
         <meta name="theme-color" content="#0B1223" />
+        <meta name="geo.region" content="IN-HR" />
+        <meta name="geo.placename" content="Faridabad" />
+        <meta name="geo.position" content="28.4089;77.3178" />
+        <meta name="ICBM" content="28.4089, 77.3178" />
       </head>
       <body className={inter.className}>
         <ResponsiveWrapper>
