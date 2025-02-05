@@ -7,8 +7,8 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata = {
   metadataBase: new URL('https://moderntechhub.in'),
   title: {
-    default: 'ModernTechHub - Best Metal Finishing Services in Faridabad, India',
-    template: '%s | ModernTechHub - Metal Finishing Experts'
+    default: 'Modern Technologies- Best Metal Finishing Services in Faridabad, India',
+    template: '%s | Modern Technologies - Metal Finishing Experts'
   },
   description: 'Leading metal finishing company in Faridabad offering anodizing, phosphating, and surface treatment solutions. ISO certified with 20+ years of excellence in industrial metal finishing.',
   keywords: [
@@ -20,7 +20,7 @@ export const metadata = {
     'chemical coating',
     'electroplating',
     'surface treatment',
-    'ModernTechHub',
+    'Modern Technologies',
     'metal finishing company near me',
     'industrial coating Faridabad',
     'best metal finishing services'
@@ -54,7 +54,7 @@ export const metadata = {
     locale: 'en_IN',
     url: 'https://moderntechhub.in',
     siteName: 'ModernTechHub',
-    title: 'ModernTechHub - Premier Metal Finishing Solutions in Faridabad',
+    title: 'Modern Technologies - Premier Metal Finishing Solutions in Faridabad',
     description: 'Top-rated metal finishing company in Faridabad offering comprehensive surface treatment solutions including anodizing, phosphating, and electroplating. ISO 9001:2015 certified.',
     images: [
       {
