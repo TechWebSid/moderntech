@@ -9,10 +9,11 @@ import Link from 'next/link';
 import { FaWhatsapp } from 'react-icons/fa';
 
 export const metadata = {
-  title: 'Modern Technologies | Premier Metal Finishing Solutions in India',
+  title: 'Modern Technologies | Premier Metal Finishing Solutions in Faridabad',
   description: 'Leading provider of metal finishing services including anodizing, phosphating, and surface treatment. ISO 9001:2015 certified company in Faridabad.',
   keywords: [
     'metal finishing India',
+    'metal finishing Faridabad',
     'anodizing services',
     'phosphating treatment',
     'surface treatment company',
@@ -22,7 +23,7 @@ export const metadata = {
   ],
   openGraph: {
     title: 'Modern Technologies - Metal Finishing Excellence',
-    description: 'Premier metal finishing solutions provider in India. Expert surface treatment services with state-of-the-art facilities.',
+    description: 'Modern Technologies Provides Best metal finishing solutions in Faridabad. Expert surface treatment services.',
     images: [
       {
         url: '/images/home-og.jpg',

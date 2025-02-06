@@ -6,9 +6,9 @@ import Footer from '@/components/Footer';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock, FaWhatsapp } from 'react-icons/fa';
 
 export const metadata = {
-  title: 'Contact ModernTechHub | Metal Finishing Services in Faridabad',
+  title: 'Contact Modern Technologies | Metal Finishing Services in Faridabad',
   description: 'Contact the leading metal finishing company in Faridabad. Get expert consultation for anodizing, phosphating, and surface treatment solutions. Visit our facility today.',
-  keywords: ['metal finishing contact', 'anodizing services Faridabad', 'surface treatment company contact', 'ModernTechHub location'],
+  keywords: ['metal finishing contact', 'anodizing services Faridabad', 'surface treatment company contact', 'Modern Technologies location'],
   alternates: {
     canonical: 'https://moderntechhub.in/contact'
   }
@@ -18,7 +18,7 @@ export const metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  'name': 'ModernTechHub',
+  'name': 'Modern Technologies',
   'image': 'https://moderntechhub.in/images/mt_logo.png',
   '@id': 'https://moderntechhub.in',
   'url': 'https://moderntechhub.in',
@@ -73,7 +73,7 @@ export default function Contact() {
           <div className="absolute inset-0">
             <Image
               src="/images/hero.jpg"
-              alt="ModernTechHub facility in Faridabad"
+              alt="Modern Technologies facility in Faridabad"
               fill
               priority
               sizes="100vw"

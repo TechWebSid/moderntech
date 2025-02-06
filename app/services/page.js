@@ -7,7 +7,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 
 export const metadata = {
   title: 'Metal Finishing Services in Faridabad | Anodizing & Surface Treatment',
-  description: 'Expert metal finishing services including anodizing, phosphating, and electroplating in Faridabad. Get professional surface treatment solutions for your industrial needs.',
+  description: 'Modern Technologies Provides Expert metal finishing services including anodizing, phosphating, and electroplating in Faridabad.',
   keywords: ['metal finishing services Faridabad', 'industrial anodizing', 'phosphating treatment', 'surface coating services'],
   alternates: {
     canonical: 'https://moderntechhub.in/services'
