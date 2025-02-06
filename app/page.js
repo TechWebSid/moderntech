@@ -6,7 +6,7 @@ import About from '../components/About';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import Link from 'next/link';
-import { FaWhatsapp } from 'react-icons/fa';
+import { FaWhatsapp } from 'react-icons/fa'
 
 export const metadata = {
   title: 'Modern Technologies | Premier Metal Finishing Solutions in Faridabad',
@@ -19,7 +19,8 @@ export const metadata = {
     'surface treatment company',
     'industrial coating Faridabad',
     'ISO certified metal finishing',
-    'Modern Technologies'
+    'Modern Technologies',
+    'Moderntechhub'
   ],
   openGraph: {
     title: 'Modern Technologies - Metal Finishing Excellence',
