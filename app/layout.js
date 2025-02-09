@@ -54,7 +54,7 @@ export const metadata = {
     locale: 'en_IN',
     url: 'https://moderntechhub.in',
     siteName: 'Modern Technologies',
-    title: 'Modern technologies - Premier Metal Finishing Solutions in Faridabad',
+    title: 'Modern Technologies | Metal Finishing Solutions in Faridabad',
     description: 'Modern Technologies is Top-rated metal finishing company in Faridabad offering comprehensive surface treatment solutions including anodizing, phosphating, and electroplating. ISO 9001:2015 certified.',
     images: [
       {
