@@ -10,7 +10,7 @@ export const metadata = {
     default: 'Modern Technologies- Best Metal Finishing Services in Faridabad, India',
     template: '%s | Modern Technologies - Metal Finishing Experts'
   },
-  description: 'Leading metal finishing company in Faridabad offering anodizing, phosphating, and surface treatment solutions. ISO certified with 20+ years of excellence in industrial metal finishing.',
+  description: 'Modern Technologies is a Leading metal finishing company in Faridabad offering anodizing, phosphating, and surface treatment solutions.',
   keywords: [
     'metal finishing Faridabad',
     'anodizing services',
