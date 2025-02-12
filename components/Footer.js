@@ -106,12 +106,12 @@ const Footer = () => {
             <p className="text-sm text-center md:text-left">
               © {new Date().getFullYear()} Modern Technologies. All rights reserved.
             </p>
-            <p className="text-sm text-center md:text-right">
+            {/* <p className="text-sm text-center md:text-right">
               Designed and Developed by{' '}
               <Link href="https://sntrudratech.com" target="_blank" className="text-orange-500 hover:text-orange-400">
                 SNT Rudra Tech LLP
               </Link>
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
